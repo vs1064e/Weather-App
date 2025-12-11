@@ -23,7 +23,6 @@ async function weatherdisplay(bar) {
             throw new Error("City does not exist");
         }
         const data = await response.json()
-        console.log(data)
         actualweather(data)
     }catch(error){
         console.error("DATA NOT RECIEVED",error.message)
